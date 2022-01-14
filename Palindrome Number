@@ -1,0 +1,14 @@
+#include <string>
+
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        auto stringX = std::to_string(x);
+        auto reverseX = stringX;
+        std::reverse(reverseX.begin(), reverseX.end());
+        if (stringX == reverseX) {
+            return true;
+        }
+        return false;
+    }
+};
